@@ -7,7 +7,7 @@ import re
 def is_email_valid(email):
     if re.match(r'[^@]+@[^@]+\.[^@]+', email):
         print("Valid email", email)
-    elif ' ' in email == True:
+    elif (' ' in email):
         print("Invalid email", email)
     else:
         print("Invalid email", email)
