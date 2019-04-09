@@ -14,6 +14,8 @@ def validate(password):
             print("Make sure your password has a number in it.", password)
         elif re.search('[A-Z]', password) is None: 
             print("Make sure your password has a capital letter in it.", password)
+        elif (' ' in password):
+            print("Make sure there is no space in it.", password)
         else:
             print("Your password seems fine.", password)
 
