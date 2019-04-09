@@ -5,12 +5,12 @@ email_missingat = "sanatariqgmail.com"
 import re
 
 def is_email_valid(email):
-    if re.match(r'[^@]+@[^@]+\.[^@]+', email):
-        print("Valid email", email)
+    if not re.match(r'[^@]+@[^@]+\.[^@]+', email):
+        print("Invalid email - no @ symbol:", email)
     elif (' ' in email):
-        print("Invalid email", email)
+        print("Invalid email - has space:", email)
     else:
-        print("Invalid email", email)
+        print("Valid email:", email)
         
 email_list = [email_with_space, email, email_missingat] 
 for n in email_list: 
