@@ -22,7 +22,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc1.divide(10, 5), 2)
         self.assertEqual(calc1.divide(-1, 1), -1)
         self.assertEqual(calc1.divide(-1, -1), 1)
-        self.assertEqual(calc1.divide(5, 2), 2.5)
+        self.assertEqual(calc1.divide(5.0, 2.0), 2.5)
 
 if __name__ == '__main__':
     unittest.main()
