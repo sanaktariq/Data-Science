@@ -31,7 +31,7 @@ def fig_gen(shape):
     polygon = mpatches.RegularPolygon(grid[1], 5, 0.1)
     patches.append(polygon)
   
-  collection = PatchCollection(patches, cmap=plt.cm.hsv, alpha=0.3)
+  collection = PatchCollection(patches, alpha=0.3)
   ax.add_collection(collection)
 
   plt.axis('equal')
