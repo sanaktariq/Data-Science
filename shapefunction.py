@@ -15,31 +15,35 @@ patches = []
 
 #define the fig_gen function, which takes the argument shape
 def fig_gen(shape):
-  if shape == "Circle": #to generate a circle"
-    circle = mpatches.Circle(grid[1], 0.1, ec="none")
-    patches.append(circle)
+  if shape == "circle": #to generate a circle"
+    ret = mpatches.Circle(grid[1], 0.1, ec="none")
     
-  elif shape == "Rectangle": #to generate a rectangle
-    rectangle = mpatches.Rectangle(grid[1] - [0.025, 0.05], 0.05, 0.1, ec="none")
-    patches.append(rectangle) 
+  elif shape == "rectangle": #to generate a rectangle
+    ret = mpatches.Rectangle(grid[1] - [0.025, 0.05], 0.05, 0.1, ec="none")
     
-  elif shape == "Ellipse": #to generate an ellipse
-    ellipse = mpatches.Ellipse(grid[1], 0.2, 0.1)
-    patches.append(ellipse)
     
-  elif shape == "Polygon": #to generate a polygon
-    polygon = mpatches.RegularPolygon(grid[1], 5, 0.1)
-    patches.append(polygon)
-  
+  elif shape == "ellipse": #to generate an ellipse
+    ret = mpatches.Ellipse(grid[1], 0.2, 0.1)
+   
+    
+  elif shape == "polygon": #to generate a polygon
+    ret = mpatches.RegularPolygon(grid[1], 5, 0.1)
+
+  return ret
+
+def plot(arg):
+
+  patches.append(arg)
   collection = PatchCollection(patches, alpha=0.3)
   ax.add_collection(collection)
 
-  plt.axis('equal')
+plt.axis('equal')
 
 #fig_gen("Polygon")
 
-shapelist = [circle, rectangle, ellipse, polygon)
+shapelist = ["circle", "rectangle", "ellipse", "polygon"]
 for n in shapelist:
-  fig_gen(shape)
+  i = fig_gen(n)
 
+  plot(i)
 
