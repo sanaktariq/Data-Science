@@ -38,7 +38,7 @@ def fig_gen(shape):
 
 #fig_gen("Polygon")
 
-shapelist = [Circle, Rectangle, Ellipse, Polygon)
+shapelist = [circle, rectangle, ellipse, polygon)
 for n in shapelist:
   fig_gen(shape)
 
