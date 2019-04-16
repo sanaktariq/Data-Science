@@ -36,7 +36,10 @@ def fig_gen(shape):
 
   plt.axis('equal')
 
-fig_gen("Polygon")
+#fig_gen("Polygon")
 
+shapelist = [Circle, Rectangle, Ellipse, Polygon)
+for n in shapelist:
+  fig_gen(shape)
 
 
