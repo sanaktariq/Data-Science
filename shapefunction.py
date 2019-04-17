@@ -39,8 +39,6 @@ def plot(arg):
 
 plt.axis('equal')
 
-#fig_gen("Polygon")
-
 shapelist = ["circle", "rectangle", "ellipse", "polygon"]
 for n in shapelist:
   i = fig_gen(n)
