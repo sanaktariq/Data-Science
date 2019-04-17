@@ -48,5 +48,3 @@ for n in shapelist:
   print(i)
   plot(i)
 
-
-
