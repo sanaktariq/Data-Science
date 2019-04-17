@@ -1,1 +1,1 @@
-#This repository keeps track of all coding assignments.
+#This repository keeps track of all coding tasks.
