@@ -1,5 +1,8 @@
 import unittest
-import calc1
+import sys 
+import os
+sys.path.append(os.path.abspath(".")) 
+import calculator.calc1 as calc1
 
 class TestCalc(unittest.TestCase):
 
