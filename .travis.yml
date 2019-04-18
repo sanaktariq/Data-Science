@@ -11,3 +11,4 @@ matrix:
        
 script:
   - python tests/test_calc1.py
+  - python tests/test_shapefunction.py
