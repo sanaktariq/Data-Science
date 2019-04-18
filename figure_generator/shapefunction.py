@@ -35,11 +35,11 @@ def fig_gen(shape):
 
   return ret
 
-x = fig_gen("polygon")
-print(str(x))
+#x = fig_gen("polygon")
+#print(str(x))
 
-cond = str(x) == "Circle(xy=(0.2, 0.5), radius=0.1)"
-print(cond)
+#cond = str(x) == "Circle(xy=(0.2, 0.5), radius=0.1)"
+#print(cond)
 
 def plot(arg):
   patches.append(arg)
@@ -51,6 +51,6 @@ plt.axis('equal')
 shapelist = ["circle", "rectangle", "ellipse", "polygon"]
 for n in shapelist:
   i = fig_gen(n)
-  #print(i)
+  print(i)
   plot(i)
 
