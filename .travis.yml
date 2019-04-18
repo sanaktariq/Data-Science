@@ -12,3 +12,6 @@ matrix:
 script:
   - python tests/test_calc1.py
   - python tests/test_shapefunction.py
+  - python tests/test_email_check.py
+  - python tests/test_form_fields.py
+  - python tests/test_password_check.py
