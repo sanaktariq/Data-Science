@@ -19,28 +19,35 @@ def fig_gen(shape, origin, width, height):
     
     return give
 
-x = fig_gen("rectangle", [2,2], 10, 5) 
-print(x)
-#print(x, x[2])
+if __name__ == "__main__":
 
-import numpy as np
-import matplotlib.path as mpath
-import matplotlib.lines as mlines
-import matplotlib.patches as mpatches
-from matplotlib.collections import PatchCollection
+    x = fig_gen("rectangle", [50, 50], 1000, 500) 
+    #print(x)
+    #print(x, x[2])
 
-# create 3x3 grid to plot the artists
-grid = np.mgrid[0.2:0.8:3j, 0.2:0.8:3j].reshape(2, -1).T
-fig, ax = plt.subplots()
-patches = []
+    import numpy as np
+    import matplotlib.path as mpath
+    import matplotlib.lines as mlines
+    import matplotlib.patches as mpatches
+    from matplotlib.collections import PatchCollection
 
-rectangle = mpatches.Rectangle([2,2], 10, 5, angle=0.0)
-patches.append(rectangle)
+    # create 3x3 grid to plot the artists
+    grid = np.mgrid[0.2:0.8:3j, 0.2:0.8:3j].reshape(2, -1).T
+    fig, ax = plt.subplots()
+    patches = []
 
-collection = PatchCollection(patches, alpha=0.3)
-ax.add_collection(collection)
+    rectangle = mpatches.Rectangle([50,50], 100, 50, angle=0.0)
+    patches.append(rectangle)
 
-plt.axis('equal')
+    collection = PatchCollection(patches, alpha=0.3)
+    ax.add_collection(collection)
 
-plt.show()
+    plt.axis('equal')
 
+    plt.show()
+
+    #ret = fig_gen(("rectangle"), (50,50), (1000), (500)) 
+    #result = [[50, 50], [1050, 50], [50, 550], [1050, 550]]
+    #cond = ret == result
+
+    #print("func:" , ret, "res:" , result, "condition:", cond)
