@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-
 #starting parameters:
 """origin = (0,0)
 height = 5
@@ -25,6 +23,8 @@ if __name__ == "__main__":
     #print(x)
     #print(x, x[2])
 
+    import matplotlib
+    import matplotlib.pyplot as plt
     import numpy as np
     import matplotlib.path as mpath
     import matplotlib.lines as mlines
