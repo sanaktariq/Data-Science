@@ -54,3 +54,4 @@ for n in shapelist:
   print(i)
   plot(i)
 
+plt.show()
