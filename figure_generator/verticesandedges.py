@@ -17,8 +17,11 @@ def fig_gen(shape, origin, width, height):
     
     return give
 
+
+
 if __name__ == "__main__":
 
+    import matplotlib.pyplot as plt
     x = fig_gen("rectangle", [50, 50], 1000, 500) 
     #print(x)
     #print(x, x[2])
@@ -31,7 +34,7 @@ if __name__ == "__main__":
     import matplotlib.patches as mpatches
     from matplotlib.collections import PatchCollection
 
-    # create 3x3 grid to plot the artists
+    #create 3x3 grid to plot the artists
     grid = np.mgrid[0.2:0.8:3j, 0.2:0.8:3j].reshape(2, -1).T
     fig, ax = plt.subplots()
     patches = []
@@ -46,8 +49,8 @@ if __name__ == "__main__":
 
     plt.show()
 
-    #ret = fig_gen(("rectangle"), (50,50), (1000), (500)) 
-    #result = [[50, 50], [1050, 50], [50, 550], [1050, 550]]
-    #cond = ret == result
+    ret = fig_gen(("rectangle"), (50,50), (1000), (500)) 
+    result = [[50, 50], [1050, 50], [50, 550], [1050, 550]]
+    cond = ret == result
 
-    #print("func:" , ret, "res:" , result, "condition:", cond)
+    print("func:" , ret, "res:" , result, "condition:", cond)
