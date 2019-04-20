@@ -4,7 +4,7 @@ import os
 sys.path.append(os.path.abspath("."))
 import figure_generator.circle as circle
 import numpy as np
-import matplotlib 
+import matplotlib.pyplot as plt
 
 class test_circle(unittest.TestCase):
 
