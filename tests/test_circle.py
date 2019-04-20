@@ -11,9 +11,8 @@ class test_circle(unittest.TestCase):
     maxDiff = None
 
     def test_circle(self):
-        #self.assertEqual(circle.circle(50, res=1).tolist(), [[50.0, 0.0], [50.0, -1.2246467991473532e-14]], msg=None)
+        self.assertEqual(circle.circle(50, res=1).tolist(), [[50.0, 0.0], [50.0, -1.2246467991473532e-14]], msg=None)
         x = str(circle.circle(50, res=15))
-        print(x)
         y = """[[ 5.00000000e+01  0.00000000e+00]
  [ 4.56772729e+01  2.03368322e+01]
  [ 3.34565303e+01  3.71572413e+01]
