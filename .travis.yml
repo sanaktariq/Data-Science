@@ -16,3 +16,4 @@ script:
   - python tests/test_form_fields.py
   - python tests/test_password_check.py
   - python tests/test_verticesandedges.py
+  - python tests/test_circle.py
