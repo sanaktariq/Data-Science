@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 
 class test_circle(unittest.TestCase):
 
+    maxDiff = None
+    
     def test_circle(self):
         #self.assertEqual(circle.circle(50, res=1).tolist(), [[50.0, 0.0], [50.0, -1.2246467991473532e-14]], msg=None)
         x = circle.circle(50, res=15).tolist()
